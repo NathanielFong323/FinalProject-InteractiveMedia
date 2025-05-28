@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR</title>
+  <style>
+    body{
+        margin: 0;
+        overflow: hidden;
+        height: 100%;
+    }
+    button {
+        background: #c0c0c0;
+        border: 2px solid;
+        border-top-color: #ffffff;
+        border-left-color: #ffffff;
+        border-right-color: #808080;
+        border-bottom-color: #808080;
+        padding: 3px 15px;
+        font-family: "MS Sans Serif", Arial, sans-serif;
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        z-index: 10;
+    }
+    #returnBn {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    #playBn {
+        position: absolute;
+        left: 8%;
+        bottom: 0;
+    }
+    canvas {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(12, 12, 228);
+        z-index: -1;
+    }
+    #cursorImg {
+        position: absolute;
+        pointer-events: none;
+        display: none;
+    }
+  </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <img id="cursorImg" src="Pics/unexpected-error.png" width="200" height="100" />
+    <button id="returnBn" onclick="history.back()">Go Back</button>
+    <button id="playBn" onclick="buttonClicked(this)">Meow</button>
+
+    <audio id="catMeow">
+        <source src="Audio/cat-meow-297927.mp3">
+    </audio>
+
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const cursorImg = document.getElementById('cursorImg');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            cursorImg.style.left = `${x}px`;
+            cursorImg.style.top = `${y}px`;
+            const imgWidth = cursorImg.width;
+            const imgHeight = cursorImg.height;
+            ctx.drawImage(cursorImg, x - imgWidth / 2, y - imgHeight / 2, imgWidth, imgHeight);
+        });
+
+        var audio = document.getElementById("catMeow")
+        function buttonClicked(button) {
+            audio.play();
+        }
+    </script>
+</body>
+</html>

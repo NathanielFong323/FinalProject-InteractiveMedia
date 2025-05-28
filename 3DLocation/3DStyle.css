@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #008080;
+  color: #000000;
+  overflow: hidden;
+}
+
+.desktop-icon {
+  position: absolute;
+  width: 80px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  cursor: pointer;
+  user-select: none;
+  font-size: 12px;
+}
+.desktop-icon img {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto 4px;
+}
+
+#desktop {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+#window {
+  position: absolute;
+  top: 15px;
+  left: 22.5vw;
+  width: 675;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+#title-bar {
+  background: #000080;
+  color: white;
+  padding: 3px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#title-bar-text {
+  padding-left: 5px;
+}
+#controls {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+button {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  padding: 3px 15px;
+  font-family: "MS Sans Serif", Arial, sans-serif;
+  cursor: pointer;
+  min-width: 100px;
+  height: 30px;
+}
+button:active {
+  border-color: #808080 #ffffff #ffffff #808080;
+  background-color: #a0a0a0;
+}
+#container3D {
+  width: 100%;
+  height: 450px;
+  background: #c4c4c4;
+  border: 2px inset #c0c0c0;
+}
+#status-bar {
+  background: #c0c0c0;
+  padding: 2px 5px;
+  font-size: 12px;
+  border-top: 2px solid #808080;
+}
+.window-control {
+  background: #c0c0c0;
+  border: 1px solid;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 24px;
+  background-color: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  z-index: 100;
+}
+#startBtn {
+  background-color: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  padding: 0px 6px;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+#startBtn:active {
+  border-color: #808080 #ffffff #ffffff #808080;
+}

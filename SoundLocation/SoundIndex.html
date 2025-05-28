@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soundscape of My World</title>
+  <link rel="stylesheet" href="SoundStyle.css">
+</head>
+<body>
+    <div class="desktop-icon" style="top: 20px; left: 5px;">
+        <img src="Image/recycle_bin_empty-4.png" alt="Soundscape">
+        <span>Recycle Bin</span><br><br>
+        <img src="Image/computer_explorer_cool-0.png" alt="Soundscape">
+        <span>Computer</span><br><br>
+        <img src="Image/directory_closed-4.png" alt="Soundscape">
+        <span>File Explorer</span><br><br>
+        <img src="Image/msie2-2.png" alt="Soundscape">
+        <span>Internet</span><br><br>
+    </div>  
+
+    <div id="window">
+    <div id="title-bar">
+        <span>My Daily Sound</span>
+        <span>☐ ✕</span>
+    </div>
+    <div id="window-body">
+        <p>Click buttons or press:</p>
+    
+      <div id="soundboard">
+        <button id="soundBtn" data-sound="PhoneCall">
+          <span>Phone Call (W)</span>
+        </button>
+        <button id="soundBtn" data-sound="Notification">
+          <span>Notification (A)</span>
+        </button>
+        <button id="soundBtn" data-sound="Alarm">
+          <span>Alarm (S)</span>
+        </button>
+        <button id="soundBtn" data-sound="Switch">
+          <span>Light Switch (D)</span>
+        </button>
+        <button id="soundBtn" data-sound="Water">
+          <span>Pouring Water (R)</span>
+        </button>
+        <button id="soundBtn" data-sound="Game">
+          <span>Booting Game (V)</span>
+        </button>
+        <button id="soundBtn" data-sound="Mall">
+          <span>Mall (G)</span>
+        </button>
+        <button id="soundBtn" data-sound="Road">
+          <span>Road (Y)</span>
+        </button>
+        <button id="soundBtn" data-sound="Tram">
+          <span>Tram Ding (N)</span>
+        </button>
+      </div>
+
+      <div id="status-bar">
+        <span>Experience my every day sound</span>
+        <span>♫ <span id="current-sound">Ready</span></span>
+      </div>
+    </div>
+    </div>
+
+    <audio id="PhoneCall" src="Sound/80s_phone_samsung.mp3" preload="auto"></audio>
+    <audio id="Notification" src="Sound/chaos.mp3" preload="auto"></audio>
+    <audio id="Alarm" src="Sound/homecoming.mp3" preload="auto"></audio>
+    <audio id="Switch" src="Sound/switch.mp3" preload="auto"></audio>
+    <audio id="Water" src="Sound/water.mp3" preload="auto"></audio>
+    <audio id="Game" src="Sound/valve_intro_sound.mp3" preload="auto"></audio>
+    <audio id="Mall" src="Sound/Mall.mp3" preload="auto"></audio>
+    <audio id="Road" src="Sound/Road.mp3" preload="auto"></audio>
+    <audio id="Tram" src="Sound/Tram.mp3" preload="auto"></audio>
+
+
+    <div id="taskbar">
+    <button id="startBtn" onclick="history.back()">
+        <img src="Image/icons8-windows-95-48.png" alt="" style="width: 26px; height: 26px;">
+        Start
+    </button>
+    <div id="taskbar-item">
+      My Sound
+    </div>
+  </div>
+  <script src="SoundMain.js"></script>
+</body>
+</html>

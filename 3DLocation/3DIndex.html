@@ -1,0 +1,51 @@
+<!--3D model Web by "https://www.youtube.com/watch?v=lGokKxJ8D2c" -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>A simple Three.JS App</title>
+    <link rel="stylesheet" href="3DStyle.css" />
+  </head>
+  <body>
+  <div class="desktop-icon" style="top: 20px; left: 5px;">
+      <img src="Image/recycle_bin_empty-4.png" alt="Soundscape">
+      <span>Recycle Bin</span><br><br>
+      <img src="Image/computer_explorer_cool-0.png" alt="Soundscape">
+      <span>Computer</span><br><br>
+      <img src="Image/directory_closed-4.png" alt="Soundscape">
+      <span>File Explorer</span><br><br>
+      <img src="Image/msie2-2.png" alt="Soundscape">
+      <span>Internet</span><br><br>
+  </div>  
+
+  <div id="desktop">
+    <div id="window">
+      <div id="title-bar">
+        <div id="title-bar-text">My 3D Gallery</div>
+        <span>☐ ✕</span>
+      </div>
+      <div id="container3D"></div>
+      <div id="controls">
+        <button id="cycleModel">Next Model</button>
+        <button id="wireframeBtn">Wireframe</button>
+        <button id="lowResBtn">Low Quality</button>
+        <button onclick="history.back()">Exit</button>
+      </div>
+      <div id="status-bar">
+        Current Model: <span id="currentModel">Loading...</span> | Polygons: <span id="polyCount">0</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="taskbar">
+    <button id="startBtn">
+        <img src="Image/icons8-windows-95-48.png" alt="" style="width: 26px; height: 26px;">
+        Start
+    </button>
+    <div id="taskbar-item">
+      My 3D Models
+  </div>
+
+  <script type="module" src="3DMain.js"></script>
+  </body>
+</html>

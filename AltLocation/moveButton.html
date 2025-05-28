@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the right button back</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            position: relative;
+        }
+        #Acid {
+            position: absolute;
+            z-index: -900;
+            min-width: 100vw;
+            max-width: 100vw;
+            max-height: auto;
+            height: auto;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .movingButton {
+            position: absolute;
+            width: 85px;
+            height: 30px;
+            border: solid rgb(0, 0, 0);
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5%;
+            color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.1s;
+            font-family: "Press Start 2P", system-ui;
+            font-size: 12px;
+            background-color: rgba(241, 241, 241, 0.3);
+        }
+        .movingButton:active {
+            transform: scale(0.9);
+        }
+        .scoreDisplay {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(152, 152, 152, 0.8);
+            border: solid rgb(0, 0, 0);
+            padding: 10px 20px;
+            font-size: 24px;
+            font-family: "Press Start 2P", system-ui;
+        }
+        
+        .button1 {
+            animation: move1 8s linear infinite;
+        }
+        .button2 {
+            animation: move2 10s linear infinite;
+        }
+        .button3 {
+            animation: move3 12s linear infinite;
+        }
+        .button4 {
+            animation: move4 9s linear infinite;
+        }
+        .button5 {
+            animation: move5 11s linear infinite;
+        }
+        .button6 {
+            animation: move6 7s linear infinite;
+        }
+        .button7 {
+            animation: move7 10s linear infinite;
+        }
+        .button8 {
+            animation: move8 8s linear infinite;
+        }
+        .button9 {
+            animation: move9 12s linear infinite;
+        }
+        .button10 {
+            animation: move10 9s linear infinite;
+        }
+        
+        @keyframes move1 {
+            0%, 100% { top: 10%; left: 10%; }
+            25% { top: 10%; left: 80%; }
+            50% { top: 80%; left: 80%; }
+            75% { top: 80%; left: 10%; }
+        }
+        @keyframes move2 {
+            0%, 100% { top: 20%; left: 20%; }
+            33% { top: 20%; left: 70%; }
+            66% { top: 70%; left: 20%; }
+        }
+        @keyframes move3 {
+            0% { top: 5%; left: 50%; }
+            50% { top: 90%; left: 50%; }
+            100% { top: 5%; left: 50%; }
+        }
+        @keyframes move4 {
+            0% { top: 30%; left: 10%; }
+            25% { top: 10%; left: 30%; }
+            50% { top: 30%; left: 90%; }
+            75% { top: 70%; left: 70%; }
+            100% { top: 30%; left: 10%; }
+        }
+        @keyframes move5 {
+            0% { top: 80%; left: 20%; }
+            33% { top: 20%; left: 50%; }
+            66% { top: 60%; left: 80%; }
+            100% { top: 80%; left: 20%; }
+        }
+        @keyframes move6 {
+            0%, 100% { top: 50%; left: 10%; }
+            50% { top: 50%; left: 90%; }
+        }
+        @keyframes move7 {
+            0% { top: 10%; left: 30%; }
+            20% { top: 30%; left: 10%; }
+            40% { top: 70%; left: 30%; }
+            60% { top: 90%; left: 70%; }
+            80% { top: 70%; left: 90%; }
+            100% { top: 10%; left: 30%; }
+        }
+        @keyframes move8 {
+            0% { top: 15%; left: 15%; }
+            14% { top: 15%; left: 85%; }
+            28% { top: 85%; left: 85%; }
+            42% { top: 85%; left: 15%; }
+            56% { top: 50%; left: 50%; }
+            70% { top: 15%; left: 50%; }
+            84% { top: 50%; left: 15%; }
+            100% { top: 15%; left: 15%; }
+        }
+        @keyframes move9 {
+            0% { top: 25%; left: 25%; }
+            25% { top: 25%; left: 75%; }
+            50% { top: 75%; left: 75%; }
+            75% { top: 75%; left: 25%; }
+            100% { top: 25%; left: 25%; }
+        }
+        @keyframes move10 {
+            0% { top: 10%; left: 50%; transform: translateX(-50%); }
+            25% { top: 50%; left: 10%; transform: translateX(0); }
+            50% { top: 90%; left: 50%; transform: translateX(-50%); }
+            75% { top: 50%; left: 90%; transform: translateX(0); }
+            100% { top: 10%; left: 50%; transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body>
+    <img id="Acid" src="Pics/CatTripping.gif">
+    <div class="scoreDisplay">Tries: <span id="score">0</span></div>
+    
+    <div class="container">
+        <button class="movingButton button1" onclick="buttonClicked(this)">Return</button>
+        <button class="movingButton button2" onclick="buttonClicked(this)">Return</button>
+        <button class="movingButton button3" onclick="buttonClicked(this)">Return</button>
+        <button class="movingButton button4" onclick="buttonClicked(this)">Return</button>
+        <button class="movingButton button5" onclick="buttonClicked(this)">Return</button>
+        <button class="movingButton button6" onclick="buttonClicked(this)">Return</button>
+        <button class="movingButton button7" onclick="buttonClicked(this)">Return</button>
+        <button class="movingButton button8" onclick="buttonClicked(this)">Return</button>
+        <button class="movingButton button9" onclick="history.back()">Return</button>
+        <button class="movingButton button10" onclick="buttonClicked(this)">Return</button>
+    </div>
+    
+    <audio id="catMeow">
+        <source src="Audio/cat-meow-297927.mp3">
+    </audio>
+
+    <script>
+        let score = 0;
+        const scoreElement = document.getElementById("score");
+        var audio = document.getElementById("catMeow")
+
+        function buttonClicked(button) {
+            audio.play();
+            button.style.display = "none";
+            score++;
+            scoreElement.textContent = score;
+            setTimeout(() => {
+                button.style.display = "flex";
+            }, 1000 + Math.random() * 2000);
+        }
+    </script>
+</body>
+</html>
