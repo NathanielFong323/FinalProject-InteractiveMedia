@@ -100,8 +100,8 @@ class OverworldMap {
 
 window.OverworldMaps = {
   DemoRoom: {
-    lowerSrc: "/images/maps/DemoLower_02.png",
-    upperSrc: "/images/maps/DemoUpper_02.png",
+    lowerSrc: "images/maps/DemoLower_02.png",
+    upperSrc: "images/maps/DemoUpper_02.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -111,7 +111,7 @@ window.OverworldMaps = {
       npcA: new Person({
         x: utils.withGrid(7),
         y: utils.withGrid(9),
-        src: "/images/characters/people/npc1.png",
+        src: "images/characters/people/npc1.png",
         behaviorLoop: [
           { type: "stand",  direction: "left", time: 800 },
           { type: "stand",  direction: "up", time: 800 },
@@ -134,7 +134,7 @@ window.OverworldMaps = {
       npcB: new Person({
         x: utils.withGrid(8),
         y: utils.withGrid(5),
-        src: "/images/characters/people/npc2.png",
+        src: "images/characters/people/npc2.png",
         talking: [
           {
             events: [
@@ -147,7 +147,7 @@ window.OverworldMaps = {
       npcC: new Person({
         x: utils.withGrid(2),
         y: utils.withGrid(9),
-        src: "/images/characters/people/Empty.png",
+        src: "images/characters/people/Empty.png",
         talking: [
           {
             events: [
@@ -160,7 +160,7 @@ window.OverworldMaps = {
       npcD: new Person({
         x: utils.withGrid(11),
         y: utils.withGrid(9),
-        src: "/images/characters/people/Empty.png",
+        src: "images/characters/people/Empty.png",
         talking: [
           {
             events: [
@@ -230,8 +230,8 @@ window.OverworldMaps = {
     
   },
   Tram: {
-    lowerSrc: "/images/maps/TramLower.png",
-    upperSrc: "/images/maps/TramUpper.png",
+    lowerSrc: "images/maps/TramLower.png",
+    upperSrc: "images/maps/TramUpper.png",
     id: "Tram",
     gameObjects: {
       hero: new Person({
@@ -240,7 +240,7 @@ window.OverworldMaps = {
       npcA: new Person({
         x: utils.withGrid(1),
         y: utils.withGrid(4),
-        src: "/images/characters/people/npc3.png",
+        src: "images/characters/people/npc3.png",
         talking: [
           {
             events: [
@@ -253,7 +253,7 @@ window.OverworldMaps = {
       npcB: new Person({
         x: utils.withGrid(6),
         y: utils.withGrid(4),
-        src: "/images/characters/people/npc2.png",
+        src: "images/characters/people/npc2.png",
         talking: [
           {
             events: [
@@ -266,7 +266,7 @@ window.OverworldMaps = {
       npcC: new Person({
         x: utils.withGrid(16),
         y: utils.withGrid(6),
-        src: "/images/characters/people/npc7.png",
+        src: "images/characters/people/npc7.png",
         talking: [
           {
             events: [
@@ -278,7 +278,7 @@ window.OverworldMaps = {
       npcD: new Person({
         x: utils.withGrid(11),
         y: utils.withGrid(7),
-        src: "/images/characters/people/npc1.png",
+        src: "images/characters/people/npc1.png",
         talking: [
           {
             events: [
@@ -291,7 +291,7 @@ window.OverworldMaps = {
       npcE: new Person({
         x: utils.withGrid(16),
         y: utils.withGrid(4),
-        src: "/images/characters/people/npc2.png",
+        src: "images/characters/people/npc2.png",
         behaviorLoop: [
           { type: "walk",  direction: "down"},
           { type: "walk",  direction: "right"},
@@ -308,7 +308,7 @@ window.OverworldMaps = {
       npcF: new Person({
         x: utils.withGrid(21),
         y: utils.withGrid(5),
-        src: "/images/characters/people/npc3.png",
+        src: "images/characters/people/npc3.png",
         talking: [
           {
             events: [
@@ -322,7 +322,7 @@ window.OverworldMaps = {
       npcG: new Person({
         x: utils.withGrid(21),
         y: utils.withGrid(4),
-        src: "/images/characters/people/npc1.png",
+        src: "images/characters/people/npc1.png",
         talking: [
           {
             events: [
@@ -400,8 +400,8 @@ window.OverworldMaps = {
     }
   },
   City: {
-    lowerSrc: "/images/maps/CityFinalLower.png",
-    upperSrc: "/images/maps/CityFinalUpper.png",
+    lowerSrc: "images/maps/CityFinalLower.png",
+    upperSrc: "images/maps/CityFinalUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -409,7 +409,7 @@ window.OverworldMaps = {
       npcA: new Person({
         x: utils.withGrid(6),
         y: utils.withGrid(19),
-        src: "/images/characters/people/npc1.png",
+        src: "images/characters/people/npc1.png",
         talking: [
           {
             events: [
@@ -421,7 +421,7 @@ window.OverworldMaps = {
       npcB: new Person({
         x: utils.withGrid(5),
         y: utils.withGrid(4),
-        src: "/images/characters/people/npc3.png",
+        src: "images/characters/people/npc3.png",
         talking: [
           {
             events: [
@@ -436,7 +436,7 @@ window.OverworldMaps = {
       npcC: new Person({
         x: utils.withGrid(4),
         y: utils.withGrid(12),
-        src: "/images/characters/people/erio.png",
+        src: "images/characters/people/erio.png",
         talking: [
           {
             events: [
@@ -449,7 +449,7 @@ window.OverworldMaps = {
       npcD: new Person({
         x: utils.withGrid(4),
         y: utils.withGrid(13),
-        src: "/images/characters/people/npc2.png",
+        src: "images/characters/people/npc2.png",
         talking: [
           {
             events: [
@@ -461,7 +461,7 @@ window.OverworldMaps = {
       npcE: new Person({
         x: utils.withGrid(4),
         y: utils.withGrid(14),
-        src: "/images/characters/people/npc1.png",
+        src: "images/characters/people/npc1.png",
         talking: [
           {
             events: [
@@ -476,7 +476,7 @@ window.OverworldMaps = {
         npcF: new Person({
         x: utils.withGrid(18),
         y: utils.withGrid(7),
-        src: "/images/characters/people/npc2.png",
+        src: "images/characters/people/npc2.png",
         talking: [
           {
             events: [
@@ -491,7 +491,7 @@ window.OverworldMaps = {
         npcG: new Person({
         x: utils.withGrid(31),
         y: utils.withGrid(16),
-        src: "/images/characters/people/erio.png",
+        src: "images/characters/people/erio.png",
         talking: [
           {
             events: [
@@ -503,7 +503,7 @@ window.OverworldMaps = {
         npcH: new Person({
         x: utils.withGrid(34),
         y: utils.withGrid(24),
-        src: "/images/characters/people/npc2.png",
+        src: "images/characters/people/npc2.png",
         talking: [
           {
             events: [
@@ -516,7 +516,7 @@ window.OverworldMaps = {
       npcI: new Person({
         x: utils.withGrid(33),
         y: utils.withGrid(7),
-        src: "/images/characters/people/npc1.png",
+        src: "images/characters/people/npc1.png",
         talking: [
           {
             events: [
@@ -531,7 +531,7 @@ window.OverworldMaps = {
       npcJ: new Person({
         x: utils.withGrid(33),
         y: utils.withGrid(6),
-        src: "/images/characters/people/npc1.png",
+        src: "images/characters/people/npc1.png",
         talking: [
           {
             events: [
@@ -546,7 +546,7 @@ window.OverworldMaps = {
       npcK: new Person({
         x: utils.withGrid(31),
         y: utils.withGrid(1),
-        src: "/images/characters/people/npc3.png",
+        src: "images/characters/people/npc3.png",
         talking: [
           {
             events: [
@@ -560,7 +560,7 @@ window.OverworldMaps = {
         npcL: new Person({
         x: utils.withGrid(18),
         y: utils.withGrid(3),
-        src: "/images/characters/people/npc7.png",
+        src: "images/characters/people/npc7.png",
         talking: [
           {
             events: [
@@ -849,8 +849,8 @@ window.OverworldMaps = {
     }
   },
   Flinders: {
-  lowerSrc: "/images/maps/FlindersFinalLower.png",
-  upperSrc: "/images/maps/FlindersFinalUpper.png",
+  lowerSrc: "images/maps/FlindersFinalLower.png",
+  upperSrc: "images/maps/FlindersFinalUpper.png",
   gameObjects: {
     hero: new Person({
       isPlayerControlled: true,
@@ -859,7 +859,7 @@ window.OverworldMaps = {
       x: utils.withGrid(6),
       y: utils.withGrid(19),
       direction: "left",
-      src: "/images/characters/people/npc1.png",
+      src: "images/characters/people/npc1.png",
       talking: [
         {
           events: [
@@ -871,7 +871,7 @@ window.OverworldMaps = {
     npcB: new Person({
       x: utils.withGrid(47),
       y: utils.withGrid(23),
-      src: "/images/characters/people/npc1.png",
+      src: "images/characters/people/npc1.png",
       talking: [
         {
           events: [
@@ -885,7 +885,7 @@ window.OverworldMaps = {
       x: utils.withGrid(40),
       y: utils.withGrid(22),
       direction: "up",
-      src: "/images/characters/people/npc2.png",
+      src: "images/characters/people/npc2.png",
       talking: [
         {
           events: [
@@ -898,7 +898,7 @@ window.OverworldMaps = {
       x: utils.withGrid(33),
       y: utils.withGrid(23),
       direction: "left",
-      src: "/images/characters/people/npc3.png",
+      src: "images/characters/people/npc3.png",
       talking: [
         {
           events: [
@@ -912,7 +912,7 @@ window.OverworldMaps = {
       x: utils.withGrid(20),
       y: utils.withGrid(23),
       direction: "up",
-      src: "/images/characters/people/erio.png",
+      src: "images/characters/people/erio.png",
       talking: [
         {
           events: [
@@ -926,7 +926,7 @@ window.OverworldMaps = {
       x: utils.withGrid(19),
       y: utils.withGrid(22),
       direction: "up",
-      src: "/images/characters/people/npc7.png",
+      src: "images/characters/people/npc7.png",
       talking: [
         {
           events: [
@@ -940,7 +940,7 @@ window.OverworldMaps = {
       x: utils.withGrid(43),
       y: utils.withGrid(27),
       direction: "up",
-      src: "/images/characters/people/npc7.png",
+      src: "images/characters/people/npc7.png",
       talking: [
         {
           events: [
@@ -954,7 +954,7 @@ window.OverworldMaps = {
       x: utils.withGrid(42),
       y: utils.withGrid(27),
       direction: "up",
-      src: "/images/characters/people/erio.png",
+      src: "images/characters/people/erio.png",
       talking: [
         {
           events: [
@@ -968,7 +968,7 @@ window.OverworldMaps = {
       x: utils.withGrid(40),
       y: utils.withGrid(27),
       direction: "up",
-      src: "/images/characters/people/npc3.png",
+      src: "images/characters/people/npc3.png",
       talking: [
         {
           events: [
@@ -982,7 +982,7 @@ window.OverworldMaps = {
       x: utils.withGrid(38),
       y: utils.withGrid(27),
       direction: "up",
-      src: "/images/characters/people/npc1.png",
+      src: "images/characters/people/npc1.png",
       talking: [
         {
           events: [
@@ -996,7 +996,7 @@ window.OverworldMaps = {
       x: utils.withGrid(27),
       y: utils.withGrid(25),
       direction: "left",
-      src: "/images/characters/people/npc2.png",
+      src: "images/characters/people/npc2.png",
       talking: [
         {
           events: [
@@ -1010,7 +1010,7 @@ window.OverworldMaps = {
       x: utils.withGrid(13),
       y: utils.withGrid(18),
       direction: "right",
-      src: "/images/characters/people/npc2.png",
+      src: "images/characters/people/npc2.png",
       talking: [
         {
           events: [
@@ -1024,7 +1024,7 @@ window.OverworldMaps = {
       x: utils.withGrid(15),
       y: utils.withGrid(20),
       direction: "right",
-      src: "/images/characters/people/npc7.png",
+      src: "images/characters/people/npc7.png",
       talking: [
         {
           events: [
@@ -1038,7 +1038,7 @@ window.OverworldMaps = {
       x: utils.withGrid(11),
       y: utils.withGrid(16),
       direction: "left",
-      src: "/images/characters/people/erio.png",
+      src: "images/characters/people/erio.png",
       talking: [
         {
           events: [
@@ -1051,7 +1051,7 @@ window.OverworldMaps = {
       x: utils.withGrid(11),
       y: utils.withGrid(13),
       direction: "left",
-      src: "/images/characters/people/npc2.png",
+      src: "images/characters/people/npc2.png",
       talking: [
         {
           events: [
@@ -1064,7 +1064,7 @@ window.OverworldMaps = {
       x: utils.withGrid(11),
       y: utils.withGrid(8),
       direction: "left",
-      src: "/images/characters/people/npc3.png",
+      src: "images/characters/people/npc3.png",
       talking: [
         {
           events: [
@@ -1078,7 +1078,7 @@ window.OverworldMaps = {
       x: utils.withGrid(0),
       y: utils.withGrid(11),
       direction: "right",
-      src: "/images/characters/people/npc3.png",
+      src: "images/characters/people/npc3.png",
       talking: [
         {
           events: [
@@ -1091,7 +1091,7 @@ window.OverworldMaps = {
       x: utils.withGrid(0),
       y: utils.withGrid(8),
       direction: "right",
-      src: "/images/characters/people/erio.png",
+      src: "images/characters/people/erio.png",
       talking: [
         {
           events: [
@@ -1104,7 +1104,7 @@ window.OverworldMaps = {
       x: utils.withGrid(0),
       y: utils.withGrid(5),
       direction: "right",
-      src: "/images/characters/people/npc7.png",
+      src: "images/characters/people/npc7.png",
       talking: [
         {
           events: [
@@ -1117,7 +1117,7 @@ window.OverworldMaps = {
     npcT: new Person({
       x: utils.withGrid(1),
       y: utils.withGrid(0),
-      src: "/images/characters/people/npc1.png",
+      src: "images/characters/people/npc1.png",
       talking: [
         {
           events: [
@@ -1390,7 +1390,7 @@ window.OverworldMaps = {
     }
   },
   Lift: {
-  lowerSrc: "/images/maps/Lift.png",
+  lowerSrc: "images/maps/Lift.png",
   upperSrc: "",
   gameObjects: {
     hero: new Person({
@@ -1400,7 +1400,7 @@ window.OverworldMaps = {
       x: utils.withGrid(2),
       y: utils.withGrid(3),
       direction: "left",
-      src: "/images/characters/people/npc1.png",
+      src: "images/characters/people/npc1.png",
       talking: [
         {
           events: [
@@ -1435,7 +1435,7 @@ window.OverworldMaps = {
     }
   },
   Main: {
-  lowerSrc: "/images/maps/Mind.png",
+  lowerSrc: "images/maps/Mind.png",
   upperSrc: "",
   gameObjects: {
     hero: new Person({
@@ -1445,7 +1445,7 @@ window.OverworldMaps = {
       x: utils.withGrid(1),
       y: utils.withGrid(3),
       direction: "right",
-      src: "/images/characters/people/npc7.png",
+      src: "images/characters/people/npc7.png",
       talking: [
         {
           events: [
@@ -1458,7 +1458,7 @@ window.OverworldMaps = {
       x: utils.withGrid(7),
       y: utils.withGrid(1),
       direction: "down",
-      src: "/images/characters/people/npc7.png",
+      src: "images/characters/people/npc7.png",
       talking: [
         {
           events: [
@@ -1473,7 +1473,7 @@ window.OverworldMaps = {
       x: utils.withGrid(11),
       y: utils.withGrid(5),
       direction: "left",
-      src: "/images/characters/people/npc7.png",
+      src: "images/characters/people/npc7.png",
       talking: [
         {
           events: [
